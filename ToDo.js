@@ -37,7 +37,7 @@ function prikaz() {
   }
   let noviLi = "";
   lista.forEach((element, index) => {
-    noviLi += `<li class="spisak">${element}<button onclick="izbrisi()">Delete</button></li>`;
+    noviLi += `<li class="spisak">${element}<button onclick="izbrisi(${index})">Delete</button></li>`;
   });
   liste.innerHTML = noviLi;
 }
